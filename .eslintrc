@@ -1,0 +1,13 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "indent": 0, //airbnb uses 2 space tabs while we are used to 4, so removed this check.
+        "max-len": [2, 200, 2], // set the allowed max row length to 200.
+        "react/prefer-stateless-function": 0, // removed that prefer stateless functions for components, not sure how that worked with alt stores yet
+        "no-trailing-spaces": [2, { "skipBlankLines": true }], // it gives an error if you have trailing whitespace but allows white space on blank lines
+        "react/jsx-no-bind":[0], // removed that it does not allow to bind functions in jsx,
+        "arrow-body-style": [0],
+        "linebreak-style": ["error", "windows"],
+        "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+    }
+}
